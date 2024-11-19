@@ -98,14 +98,14 @@ plus.addEventListener('click', () => {
 minus.addEventListener('click', () => {
     number1 = display.value;
     display.value += minusValue;
-    
-   
+
+
 })
 
 x.addEventListener('click', () => {
     number1 = display.value;
     display.value += xValue;
-   
+
 })
 
 back.addEventListener('click', () => {
@@ -116,31 +116,15 @@ back.addEventListener('click', () => {
 divide.addEventListener('click', () => {
     number1 = display.value;
     display.value += divideValue;
-    
+
 })
 
 equal.addEventListener('click', () => {
     function calculate() {
         let number1 = display.value;
-        if(number1){
+        if (number1) {
             display.value = eval(number1);
         }
     }
-    calculate();    
+    calculate();
 })
-
-
-
-
-
-// function operate(operator, number1, number2) {
-//     if (operator === '+') {
-//         return number1 + number2;
-//     } else if (operator === '-') {
-//         return number1 - number2;
-//     } else if (operator === 'x') {
-//         return number1 * number2;
-//     } else if (operator === '÷') {
-//         return number1 / number2;
-//     }
-// }
