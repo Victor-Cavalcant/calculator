@@ -31,7 +31,7 @@ const zeroValue = '0';
 const plusValue = '+';
 const minusValue = '-';
 const xValue = '*';
-const backValue = '.';
+const backValue = '←';
 const divideValue = '/';
 const equalValue = '=';
 const clearValue = 'C';
@@ -128,4 +128,5 @@ equal.addEventListener('click', () => {
     }
     calculate();
 })
+
 
