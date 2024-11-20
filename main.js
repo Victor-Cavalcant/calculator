@@ -31,7 +31,11 @@ const zeroValue = '0';
 const plusValue = '+';
 const minusValue = '-';
 const xValue = '*';
+<<<<<<< HEAD
 const backValue = '.';
+=======
+const backValue = '←';
+>>>>>>> eval
 const divideValue = '/';
 const equalValue = '=';
 const clearValue = 'C';
@@ -117,6 +121,7 @@ divide.addEventListener('click', () => {
     number1 = display.value;
     display.value += divideValue;
 
+<<<<<<< HEAD
 })
 
 equal.addEventListener('click', () => {
@@ -128,3 +133,18 @@ equal.addEventListener('click', () => {
     }
     calculate();
 })
+=======
+})
+
+equal.addEventListener('click', () => {
+    function calculate() {
+        let number1 = display.value;
+        if (number1) {
+            display.value = eval(number1);
+        }
+    }
+    calculate();
+})
+
+
+>>>>>>> eval
